@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch JavaFX App",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "Industrial Network_fc2fb645",
+      "vmArgs": "--module-path C:/javafx-sdk-24.0.2/lib --add-modules javafx.controls,javafx.fxml,javafx.media"
+    }
+  ]
+}
