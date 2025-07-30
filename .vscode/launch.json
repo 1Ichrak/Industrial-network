@@ -3,11 +3,11 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Launch JavaFX App",
       "request": "launch",
-      "mainClass": "Main",
+      "mainClass": "umbrella",
       "projectName": "Industrial Network_fc2fb645",
-      "vmArgs": "--module-path C:/javafx-sdk-24.0.2/lib --add-modules javafx.controls,javafx.fxml,javafx.media"
+      "name": "Launch JavaFX App",
+      "vmArgs": "--module-path C:/javafx-sdk-24.0.2/lib --add-modules javafx.controls,javafx.fxml,javafx.media,javafx.web"
     }
   ]
 }

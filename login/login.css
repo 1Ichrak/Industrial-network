@@ -1,0 +1,164 @@
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/Livvic/livvic-v14-latin-200.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Livvic/livvic-v14-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MPLUS';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/m-plus-2-v14-latin-regular.woff2') format('woff2');
+}
+
+/* Reset & base */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+
+
+img {
+  width: 190%;
+  height: auto;
+  object-fit: contain; /* or cover depending on your needs */
+  display: block;
+}
+
+
+/* Main Grid: Left (30%) + Right (70%) */
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100vw; /* full viewport width */
+}
+
+/* Left side */
+.left {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.left img {
+  height: 135%;
+  padding-right: 300px;
+}
+
+/* Right side layout: 3 rows */
+.right {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #000;
+  color: white;
+  padding: 20px;
+}
+
+.top h1 {
+  font-size: 90px;
+  font-weight: 200;
+  margin: 0;
+  font-family: 'Livvic', sans-serif;
+  padding-left: 180px;
+  padding-top: 200px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.middle {
+  padding-top: 30px;
+  padding-left: 60px;
+  display: flex;
+  justify-content: center;   /* horizontal centering */
+}
+
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+  height: 40%;
+  padding-right: 50px;
+}
+
+
+.login-form label {
+  font-size: 16px;
+  color: white;
+}
+
+.login-form input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+.login-form button {
+  padding: 12px;
+  background-color: #a22222;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Livvic', sans-serif;
+}
+
+.login-form input::placeholder {
+  font-family: 'MPLUS', sans-serif;
+  color: rgb(90, 90, 90);
+}
+
+.login-form input {
+  border: 2px solid rgb(90, 90, 90); /* thickness, style, and color */
+  caret-color: rgb(90, 90, 90);
+  color: white;
+  padding-left: 20px;
+  font-family: 'MPLUS', sans-serif;
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #aaa;
+  font-family: 'MPLUS', sans-serif;
+}
+
+#login_result {
+  color: rgb(175, 23, 23);
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-family: 'MPLUS', sans-serif;
+  transition: all 0.3s ease;
+}
+
